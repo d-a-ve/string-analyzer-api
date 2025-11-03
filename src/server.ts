@@ -85,7 +85,6 @@ app.post("/strings", async (req: Request, res: Response) => {
 		character_frequency: characterFrequencyArray,
 	});
 	await newString.save();
-	console.log(newString);
 
 	return res.status(201).json({
 		id: sha256HashedValue,
